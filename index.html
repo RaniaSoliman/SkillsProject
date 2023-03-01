@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Halifax Canoe and Kayak">
+        <meta name="description" content="Information about upcoming adventures">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halifax Canoe and Kayak</title>
+        <link rel="icon" type="image/png" href="CanoelogoBlue.png">
+        <link rel="stylesheet" href="styles.css">
+        <!-- jquery library reference -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+    </head>
+
+    <body>
+    <!-- When the hamburger menu is clicked, the menu must ‘toggle’ in and out using jQuery -->
+        <script>
+            $(document).ready(function(){ 
+                $("#btnMenu").click(function(){ 
+                    if($("#listMenu").is(":visible")){                			
+                        $("#listMenu").hide();
+                    }
+                    else{
+                        $("#listMenu").slideDown("slidedown");
+                    }
+                }); 
+            });
+        </script>
+            
+        <header id="mainheader" >
+         <!-- navigation bar contains the menu-header-logo    -->
+            <nav>
+                <button id="btnMenu"><img src="hamburger.png" height=55></button>
+                Halifax Canoe and Kayak
+                <img style="float:right"; src="HalifaxCanoelogo.png" height="55" />
+                
+            </nav>
+    
+        </header>
+        <!-- the hidden menu-->
+        <div id="listMenu">
+            <ul>
+                <li>Home</li> <br>
+                <li>Book Trip</li><br>
+                <li>Admin Log</li>
+            </ul>
+        </div>
+
+        <!-- the main content of the webpage -->
+        <div style="margin-left: auto;margin-right: auto;">
+            <main">
+                <img id="imgCanoe" src="canoe.jpg" alt="Come Experience Canada" width=1000px  height="400px"/>
+
+                <div id="divText" style="max-width: 1200px;">
+                    <header id="textheader">
+                        <h1>Upcoming Adventures</h1><hr style="margin-left: 5px; width: 350px;">
+                    </header>
+    
+                    <h2>Halifax</h2>
+                        <p>
+                            Date:2017-04-12 <br>
+                            Duration: 4 days
+                        </p>
+                        <h3>Summary</h3>
+                        <p>
+                            Canoeing – recreational boating activity or paddle sport in which you kneel or sit facing 
+                            forward in an open or closed-decked canoe, and propel yourself with a single-bladed paddle, 
+                            under your own power. Kayaking – use of a kayak for moving across water.
+                        </p>
+
+                        <h2>Sydney</h2>
+                        <p>
+                            Date:2017-05-10 <br>
+                            Duration: 2 days
+                        </p>
+                        <h3>Summary</h3>
+                        <p>
+                            Faster: Kayaks are generally faster than canoes due to their efficient design. 
+                            Easier to paddle: Sitting lower in the water with a sleeker design, kayaks are easier to 
+                            paddle than canoes. More maneuverable in the water: It's easier to turn kayaks.
+                        </p>
+                </div>
+            </main>    
+        </div>
+    
+    </body>
+</html>
