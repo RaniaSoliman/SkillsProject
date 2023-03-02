@@ -18,12 +18,14 @@
 
 /* Below 800px all font sizes must change */
 @media only screen and (max-width: 800px){
-    div{
+    div
+    ,footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
     p{
     width: 500;
     }
+
 }
 
 body {
